@@ -4,8 +4,8 @@ import future.keywords.in
 
 import data.permit.generated.abac.utils.attributes
 
-default resourceset__5f_5fautogen_5fBlog = false
+default userset_Blog_5fAdmin = false
 
-resourceset__5f_5fautogen_5fBlog {
-	attributes.resource.type == "Blog"
+userset_Blog_5fAdmin {
+	attributes.user.roles == "moderator"
 }
